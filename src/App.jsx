@@ -94,23 +94,23 @@ export default function App() {
             {navOpen ? <X className="text-white" aria-hidden="true" /> : <Menu className="text-white" aria-hidden="true" />}
           </button>
 
-          <nav id="navbarNavDropdown" className={`collapse navbar-collapse ${navOpen ? 'show' : ''}`} aria-label="Navegación Principal">
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold align-items-lg-center">
+          <nav id="navbarNavDropdown" className={`collapse navbar-collapse w-100 bg-dark p-3 rounded-bottom shadow-lg ${navOpen ? 'show' : ''}`} style={{ backgroundColor: '#0b192c', position: 'absolute', top: '100%', left: 0 }} aria-label="Navegación Principal">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold align-items-lg-center gap-2 text-center text-lg-start">
               <li className="nav-item">
-                <a className="nav-link text-white px-3" href="#servicios" onClick={() => setNavOpen(false)}>Servicios</a>
+                <a className="nav-link text-white px-3 py-2" href="#servicios" onClick={() => setNavOpen(false)}>Servicios</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white px-3" href="#beneficios" onClick={() => setNavOpen(false)}>Ventajas</a>
+                <a className="nav-link text-white px-3 py-2" href="#beneficios" onClick={() => setNavOpen(false)}>Ventajas</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white px-3" href="#cotizador" onClick={() => setNavOpen(false)}>Cotizador ₡</a>
+                <a className="nav-link text-white px-3 py-2" href="#cotizador" onClick={() => setNavOpen(false)}>Cotizador ₡</a>
               </li>
               <li className="nav-item ms-lg-2 mt-2 mt-lg-0">
                 <a 
                   href="https://wa.me/50686958492?text=Hola,%20me%20gustaría%20información%20sobre%20sus%20servicios%20web" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="btn fw-bold text-white d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill shadow-sm"
+                  className="btn fw-bold text-white d-inline-flex align-items-center justify-content-center gap-2 px-4 py-2 rounded-pill shadow-sm w-100"
                   style={{ backgroundColor: '#10b981', borderColor: '#10b981' }}
                   aria-label="Hablar con un asesor comercial a través de WhatsApp"
                 >
