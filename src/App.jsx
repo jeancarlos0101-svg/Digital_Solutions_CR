@@ -3,7 +3,6 @@ import {
   CheckCircle, 
   Smartphone, 
   Zap, 
-  MapPin, 
   MessageSquare, 
   Calculator, 
   Globe, 
@@ -17,7 +16,8 @@ import {
   Code2,
   Cpu,
   Mail,
-  Clock
+  Clock,
+  MapPin
 } from 'lucide-react';
 
 export default function App() {
@@ -350,8 +350,8 @@ export default function App() {
               <p className="text-secondary lead fs-6">Diseñamos sitios rápidos, accesibles y optimizados para el mercado.</p>
             </header>
 
-            <div className="row g-4 mx-0 w-100">
-              <div className="col-md-6 col-lg-3">
+            <div className="row g-4 justify-content-center mx-0 w-100">
+              <div className="col-md-6">
                 <article className="card h-100 border-0 shadow-sm rounded-4 p-4 bg-white">
                   <div className="card-body p-0">
                     <div className="rounded-3 p-3 d-inline-block mb-3" style={{ backgroundColor: '#e6f4ea', color: '#10b981' }} aria-hidden="true">
@@ -365,35 +365,7 @@ export default function App() {
                 </article>
               </div>
 
-              <div className="col-md-6 col-lg-3">
-                <article className="card h-100 border-0 shadow-sm rounded-4 p-4 bg-white">
-                  <div className="card-body p-0">
-                    <div className="rounded-3 p-3 d-inline-block mb-3" style={{ backgroundColor: '#e0f2fe', color: '#0284c7' }} aria-hidden="true">
-                      <MessageSquare size={28} />
-                    </div>
-                    <h3 className="h5 fw-bold mb-2">Ventas a WhatsApp</h3>
-                    <p className="text-secondary small mb-0 lh-base">
-                      Convertimos visitas en clientes directos. Formularios y botones integrados para recibir pedidos a su número comercial.
-                    </p>
-                  </div>
-                </article>
-              </div>
-
-              <div className="col-md-6 col-lg-3">
-                <article className="card h-100 border-0 shadow-sm rounded-4 p-4 bg-white">
-                  <div className="card-body p-0">
-                    <div className="rounded-3 p-3 d-inline-block mb-3" style={{ backgroundColor: '#fee2e2', color: '#ef4444' }} aria-hidden="true">
-                      <MapPin size={28} />
-                    </div>
-                    <h3 className="h5 fw-bold mb-2">SEO Local Costa Rica</h3>
-                    <p className="text-secondary small mb-0 lh-base">
-                      Aparezca en las búsquedas locales de Google y Google Maps en su cantón o provincia para captar clientes cercanos.
-                    </p>
-                  </div>
-                </article>
-              </div>
-
-              <div className="col-md-6 col-lg-3">
+              <div className="col-md-6">
                 <article className="card h-100 border-0 shadow-sm rounded-4 p-4 bg-white">
                   <div className="card-body p-0">
                     <div className="rounded-3 p-3 d-inline-block mb-3" style={{ backgroundColor: '#fef3c7', color: '#d97706' }} aria-hidden="true">
